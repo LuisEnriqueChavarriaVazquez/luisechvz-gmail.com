@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="style/style.css">
+    <title>Practica_5</title>
+</head>
+
+<body>
+    <section class="head">
+        <h1>PRACTICA 5</h1>
+        <h2>Alumno: Chavarr&iacute;a V&aacute;zquez Luis Enrique.</h2>
+        <h2>Grupo: 2CM8.</h2>
+        <br><br>
+    </section>
+</body>
+
+<!--Para lo numeros factoriales de la tabla-->
+<script>
+    var factorial = 1;
+    var arrayFactorial = []
+    var acumulado;
+
+    document.write("<h2>" + "Tabla hecha con el METODO WRITE del document" + "</h2>")
+    document.write("<table class=\"tableDesign\">")
+    document.write("<tr><th class=\"celdaTitle\">" + "Numero" + "</th><th class=\"celdaTitle\">" + "Resultado del factorial" + "</th></tr>");
+    for (var i = 1; i <= 10; i++) {
+        factorial *= i;
+        arrayFactorial[i] = factorial;
+        document.write("<tr><td class=\"celda\">" + i + "</td><td class=\"celda\">" + arrayFactorial[i] + "</td></tr>");
+    }
+    document.write("</table>")
+</script>
+
+<!--Para los numeros primos-->
+<script>
+    var numerosPrimos = [];
+    document.write("<h2>Numeros Primos</h2>" + "<br>");
+
+    for (var i = 2; i <= 1000; i++) {
+        var primo = 1;
+        var contador = 2;
+        while (contador <= i / 2 && primo) {
+            if (i % contador === 0) {
+                primo = 0;
+            }
+            contador++;
+        }
+        if (primo) {
+            document.write(" <p class=\"primos\">" + i + "</p> //")
+        }
+    }
+</script>
+</html>

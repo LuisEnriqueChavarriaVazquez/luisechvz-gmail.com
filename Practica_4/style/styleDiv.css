@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+body{
+    padding: 100px;
+}
+
+
+#formatTextTitleByForce{
+    color: rgb(61, 51, 7) !important;
+    font-weight: 900 !important;
+    font-size: 5em !important;
+    font-family: Roboto,Arial, Helvetica, sans-serif !important;
+}
+
+
+/*Para los estilos text*/
+.biggerText{
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.marginText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noticiaPic{
+    width: 550px;
+}
+
+h1{
+    font-size: 2em;
+}
+
+
+.dcajaPadre{
+    width: 100%;
+    margin: 50px 0px 50px 0px;
+    background-color: burlywood;
+    box-shadow: 1px 0px 10px rgb(92, 92, 92);
+}
+
+.dtitle{
+    display: block;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.dpicture{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.dpictureE{
+    display: inline-flex;
+    margin: 10px 20px 10px 20px;
+}
+
+.extraMargin{
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.padre{
+    display: flex;
+}
+
+.linksD,.infoD,.infoN{
+    width: 33%;
+    display: inline-block;
+    margin: 0px;
+}
+
+.linksD{
+    background: rgb(128, 84, 3);
+    padding: 50px;
+}
+
+.infoD{
+    background-color: bisque;
+    padding: 50px;
+}
+
+.infoN{
+    background-color: blanchedalmond;
+    padding: 50px;
+}
+
+.marginFoot{
+    padding: 2em;
+    font-size: 30px;
+}
+
+
+

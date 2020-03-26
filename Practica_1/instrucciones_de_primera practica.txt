@@ -1,0 +1,34 @@
+Practica 1 // Pag de datos personales.
+
+Realizar una pagina web que obtenga sus datos personales, usando las etiquetas de texto, la informacion
+que debe contener es:
+
+#Datos personales:
+
+	Nombre:
+	FechaNacimiento:
+	Edad:
+	Direccion:
+	CorreoElectronico:
+	Apodo:
+	Twitter:
+	Facebook:
+	Instagram:
+
+Datos escolares:
+	Nivel medio superior:
+	Promedio:
+	Nivel Superior:
+	Promedio:	
+	Materias cursadas a la fecha:
+	Promedio general:
+	Nivel y semestre actual:
+
+Otros Datos:
+	Pasatiempos:
+	Deportes Favoritos:
+	Materias favoritas:
+	Lenguajes de programacion conocido:
+	Otros temas de interes:
+	(a parte de la escuela y todo lo que tenga que ver con las tecnologias y la computacion))
+	Comentarios:
