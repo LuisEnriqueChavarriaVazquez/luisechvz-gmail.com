@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "PSR";
+    src: url("../resorces/PSR.ttf");
+}
+
+*,body{
+    font-family: PSR,Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+}
+
+body{
+    background-color: #dbdbdb;
+}
+
+/*Para el texto*/
+.bolded{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.title{
+    font-size: 5em;
+    font-weight: 800;
+    color: rgb(78, 78, 78);
+}
+
+.textRegular{
+    font-size: 30px;
+    color: rgb(78, 78, 78);
+}
+
+a{
+    font-size: 30px;
+    color: rgb(0, 40, 126);
+}
+
+.wholeBoxWhole{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wholeBox{
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formBox{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputBox{
+    width: 100%;
+    height: 100%;
+}
+
+input{
+    margin: 20px;
+    padding: 40px 5px 40px 5px;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+
+    border-style: none;
+    border-collapse: collapse;
+    background-color: rgb(255, 255, 255);
+
+    color: rgb(3, 63, 151);
+    font-size: 1.8em;
+    font-weight: 800;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+input:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
