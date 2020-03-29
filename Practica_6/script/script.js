@@ -5,10 +5,10 @@ var result2 = [];
 
 //Creacion de las matrices.
 function definirTamano() {
-    sizeDefinido = parseInt(prompt("Introduzca el tamaño de la matriz 1 & 2: "));
-    console.log("El tamaño fue aceptado " + sizeDefinido);
-    matrizCreador(sizeDefinido);
-    return sizeDefinido;
+        sizeDefinido = parseInt(prompt("Introduzca el tamaño de la matriz 1 & 2: "));
+        console.log("El tamaño fue aceptado " + sizeDefinido);
+        matrizCreador(sizeDefinido);
+        return sizeDefinido;
 }
 
 
@@ -25,6 +25,7 @@ function matrizCreador(tamaño) {
 
 // Insertar los valores de las matrices.
 function definirValores() {
+
     for (var i = 0; i < sizeDefinido; i++) {
         for (var contador = 0; contador < sizeDefinido; contador++) {
             valorJ = parseInt(prompt("Introduzca el valor en MATRIZ 1 de [" + i + "][" + contador + "]"));
@@ -78,6 +79,25 @@ function sumarMatrices(){
     }
     console.log(sumarMatriz);
     displayAlert(sumarMatriz);
+}
+
+//Para encontrar las diagonales de las matrices
+function getDiagonalMatrices(){
+    var segundoValorDiagonal = [];
+    var primerValorDiagonal = [];
+
+    var result1NumCols = result1[0].length;
+    for(var rContador = 0; rContador < result1NumCols; rContador++){
+        for(var cContador = 0; cContador < result1NumCols; cContador++){
+            if (rContador == cContador){
+                primerValorDiagonal[rContador] = result1[rContador][cContador];
+                segundoValorDiagonal[rContador] = result2[rContador][cContador];
+            }
+        }
+    }
+
+    alert("MATRIZ 1 /// Los valores de la diagonal son: " + primerValorDiagonal);
+    alert("MATRIZ 2 /// Los valores de la diagonal son: " + segundoValorDiagonal);
 }
 
 //Poner en un alert
