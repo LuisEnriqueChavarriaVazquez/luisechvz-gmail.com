@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 7</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="extra/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="titleNav">
+            <p>Pr&aacute;ctica 7.</p> &nbsp;&nbsp;&nbsp;&nbsp;
+            <p>Chavarr&iacute;a V&aacute;zquez Luis Enrique.</p>
+        </div>
+    </div>
+
+    <br><br> <br><br>
+    <div>
+        <div class="datos">
+            <p><span>Alumno:</span> Chavarr&iacute;a V&aacute;zquez Luis Enrique.</p>
+            <p><span>Grupo:</span> 2CM8.</p>
+        </div>
+
+        <form name="formu">
+            <fieldset>
+                <legend>Datos Personales.</legend>
+                <label for="nombre">Nombre.</label>
+                <input type="text" class="inputTexto" name="nombre" id="nombre">
+                <br><br>
+
+                <label for="apPaterno">Ap. Paterno.</label>
+                <input type="text" class="inputTexto" name="apPaterno" id="apPaterno">
+                <br><br>
+
+                <label for="apMaterno">Ap. Materno.</label>
+                <input type="text" class="inputTexto" name="apMaterno" id="apMaterno">
+                <br><br>
+
+                <!--Fecha de nac-->
+                <label for="nac">Fecha de nacimiento. &nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <select name="dia" class="inputChoose" id="dia">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+                <select name="select" class="inputChoose" id="mes">
+                    <option>Enero</option>
+                    <option>Febrero</option>
+                    <option>Marzo</option>
+                    <option>Abril</option>
+                    <option>Mayo</option>
+                    <option>Junio</option>
+                    <option>Julio</option>
+                    <option>Agosto</option>
+                    <option>Septiembre</option>
+                    <option>Octubre</option>
+                    <option>Noviembre</option>
+                    <option>Diciembre</option>
+                </select>
+                <select name="select" class="inputChoose" id="year">
+                    <option>1990</option>
+                    <option>1991</option>
+                    <option>1992</option>
+                    <option>1993</option>
+                    <option>1994</option>
+                    <option>1995</option>
+                    <option>1996</option>
+                    <option>1997</option>
+                    <option>1998</option>
+                    <option>1999</option>
+                    <option>2000</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                    <option>2004</option>
+                    <option>2005</option>
+                    <option>2006</option>
+                </select>
+                <input type="date" name="date" id="date" class="inputTexto">
+                <br><br>
+                <!--Signo zodiacal-->
+                <label for="signo">Signo zodiacal.</label>
+                <select name="select" class="inputChoose" id="signo" name="signo">
+                    <option>Aries</option>
+                    <option>Tauro</option>
+                    <option>Geminis</option>
+                    <option>Cancer</option>
+                    <option>Leo</option>
+                    <option>Virgo</option>
+                    <option>Libra</option>
+                    <option>Escorpio</option>
+                    <option>Sagitario</option>
+                    <option>Capricornio</option>
+                    <option>Acuario</option>
+                    <option>Piscis</option>
+                </select>
+                <br><br>
+
+                <!--Sexo (género)-->
+                <p>Sexo (g&eacute;nero).</p> <br>
+                <input type="radio" name="genero" value="Masculino">Masculino
+                <input type="radio" name="genero" value="Femenino">Femenino
+                <br><br>
+
+                <!--Email-->
+                <label for="email">Email</label>
+                <input type="email" class="inputTexto" name="email" id="email">
+                <br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Direcci&oacute;n.</legend>
+
+                <label for="calle">Calle.</label>
+                <input type="text" class="inputTexto" name="calle" id="calle">
+                <br><br>
+
+                <label for="numeroCasa">N&uacute;mero.</label>
+                <input type="text" class="inputTexto" name="numeroCasa" id="numeroCasa">
+                <br><br>
+
+                <label for="codigoPostal">C.P.</label>
+                <input type="text" class="inputTexto" name="codigoPostal" id="codigoPostal">
+                <br><br>
+
+                <label for="delagacion">Delegaci&oacute;n</label>
+                <select name="delagacion" class="inputChoose" id="delagacion">
+                    <option>Alvaro Obregon</option>
+                    <option>Azcapotzalco</option>
+                    <option>Benito Juarez</option>
+                    <option>Coyoacan</option>
+                    <option>Cuajimalpa de Morelos</option>
+                    <option>Cuauhtemoc</option>
+                    <option>Gustavo A. Madero</option>
+                    <option>Iztacalco</option>
+                    <option>Iztapalapa</option>
+                    <option>Magdalena Contreras</option>
+                    <option>Miguel Hidalgo</option>
+                    <option>Milpa Alta</option>
+                    <option>Tlahuac</option>
+                    <option>Venustiano Carranza</option>
+                    <option>Xochimilco</option>
+                </select><br><br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Informac&oacute;n general.</legend>
+
+                <p>Lenguaje de programación favorito.</p>
+                <input type="checkbox" class="check" value="C">C
+                <input type="checkbox" class="check" value="C++">C++
+                <input type="checkbox" class="check" value="JAVA">JAVA
+                <input type="checkbox" class="check" value="JS">JS
+                <input type="checkbox" class="check" value="Python">Python
+                <input type="checkbox" class="check" value="Ruby">Ruby
+                <input type="checkbox" class="check" value="Otro">Otro
+                <br><br>
+
+                <label for="pasatiempos">Pasatiempos.</label>
+                <select name="pasatiempos" class="inputChooseSpecial" id="pasatiempos" size="3">
+                    <option>Escuchar m&uacute;sica.</option>
+                    <option>Jugar videojuegos.</option>
+                    <option>Salir a fiestas con los amigos.</option>
+                    <option>Leer un buen libro.</option>
+                    <option>Sacar a pasar al perro.</option>
+                    <option>Ir a comer a un restaurante.</option>
+                    <option>Ver videos en internet.</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informac&oacute;n acad&eacute;mica.</legend>
+
+                <label for="promedio">Promedio.</label>
+                <input type="text" class="inputTexto" name="promedio" id="promedio">
+                <br><br>
+
+                <label for="semestre">Semestre</label>
+                <select name="semestre" class="inputChoose">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                </select><br><br>
+
+                <!--materia-->
+                <label for="materiasDebe">¿Debes materias?</label> &nbsp;&nbsp;
+                <label for="materias">Si</label>
+                <input type="radio" class="radioInput" name="materiasDebe" id="materias">
+                <label for="materiasF">No</label>
+                <input type="radio" class="radioInput" name="materiasDebe" id="materiasF">
+                <br><br>
+
+
+                <label for="comentario">Comentarios.</label> <br><br>
+                <textarea name="comentario" id="comentario" cols="30" rows="10"
+                    placeholder="Escriba algun comentario."></textarea>
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos de la Cuenta.</legend>
+
+                <label for="nombreUser">Nombre de usuario.</label>
+                <input type="text" class="inputTexto" name="nombreUser" id="nombreUser">
+                <br><br>
+
+                <label for="password">Password.</label>
+                <input type="password" name="password" class="inputTexto" id="password">
+                <br><br>
+            </fieldset>
+
+            <input type="submit" onclick="alertFormulario()" value="Enviar formulario.">
+
+        </form>
+    </div>
+
+</body>
+<script src="script/js.js"></script>
+
+</html>
