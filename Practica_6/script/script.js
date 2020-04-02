@@ -4,7 +4,7 @@ var result2 = [];
 
 //Para validar
 var expreg = new RegExp("^[0-9]+$");
-var expreg2 = new RegExp("^[a-z,A-Z]+$")
+var expreg2 = new RegExp("^[a-z,A-Z,' ']+$")
 
 //Creacion de las matrices.
 function definirTamano() {
