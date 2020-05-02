@@ -86,7 +86,7 @@ if (leerCookie("opcion4") == "si") {
     document.getElementById('opcion4').selected = false;
 }
 
-if (document.cookie.includes("C") == true) {document.getElementsByName('check')[0].checked = true;}
+if (document.cookie.includes("Lenguaje C") == true) {document.getElementsByName('check')[0].checked = true;}
 if (document.cookie.includes("C++") == true) {document.getElementsByName('check')[1].checked = true;}
 if (document.cookie.includes("JAVA") == true) {document.getElementsByName('check')[2].checked = true;}
 if (document.cookie.includes("JS") == true) {document.getElementsByName('check')[3].checked = true;}
