@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 8</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="extra/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="titleNav">
+            <p>Pr&aacute;ctica 8. <b>Uso de las cookies</b></p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <p>Chavarr&iacute;a V&aacute;zquez Luis Enrique.</p>
+        </div>
+    </div>
+
+    <br><br> <br><br>
+    <div>
+        <div class="datos">
+            <p><span>Alumno:</span> Chavarr&iacute;a V&aacute;zquez Luis Enrique.</p>
+            <p><span>Grupo:</span> 2CM8.</p>
+        </div>
+
+        <form name="formu">
+            <fieldset>
+                <legend>Datos Personales.</legend>
+                <label for="nombre">Nombre.</label>
+                <input type="text" class="inputTexto" name="nombre" required id="nombre">
+                <br><br>
+
+                <label for="apPaterno">Ap. Paterno.</label>
+                <input type="text" class="inputTexto" name="apPaterno" required id="apPaterno">
+                <br><br>
+
+                <label for="apMaterno">Ap. Materno.</label>
+                <input type="text" class="inputTexto" name="apMaterno" required id="apMaterno">
+                <br><br>
+
+                <!--Fecha de nac-->
+                <label for="nac">Fecha de nacimiento. &nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="date" class="inputTexto" id="nac" name="nac">
+                <br><br>
+                <!--Signo zodiacal-->
+                <label for="signo">Signo zodiacal.</label>
+                <select name="select" class="inputChoose" required id="signo" name="signo">
+                    <option>Aries</option>
+                    <option>Tauro</option>
+                    <option>Geminis</option>
+                    <option>Cancer</option>
+                    <option>Leo</option>
+                    <option>Virgo</option>
+                    <option>Libra</option>
+                    <option>Escorpio</option>
+                    <option>Sagitario</option>
+                    <option>Capricornio</option>
+                    <option>Acuario</option>
+                    <option>Piscis</option>
+                </select>
+                <br><br>
+
+                <!--Sexo (género)-->
+                <p>Sexo (g&eacute;nero).</p> <br>
+                <input type="radio" name="genero" value="Masculino" required>Masculino
+                <input type="radio" name="genero" value="Femenino" required>Femenino
+                <br><br>
+
+                <!--Email-->
+                <label for="email">Email</label>
+                <input type="email" class="inputTexto" name="email" required id="email">
+                <br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Direcci&oacute;n.</legend>
+
+                <label for="calle">Calle.</label>
+                <input type="text" class="inputTexto" name="calle" required id="calle">
+                <br><br>
+
+                <label for="numeroCasa">N&uacute;mero.</label>
+                <input type="text" class="inputTexto" name="numeroCasa" required id="numeroCasa">
+                <br><br>
+
+                <label for="codigoPostal">C.P.</label>
+                <input type="text" class="inputTexto" name="codigoPostal" required id="codigoPostal">
+                <br><br>
+
+                <label for="delagacion">Delegaci&oacute;n</label>
+                <select name="delagacion" class="inputChoose" required id="delagacion">
+                    <option>Alvaro Obregon</option>
+                    <option>Azcapotzalco</option>
+                    <option>Benito Juarez</option>
+                    <option>Coyoacan</option>
+                    <option>Cuajimalpa de Morelos</option>
+                    <option>Cuauhtemoc</option>
+                    <option>Gustavo A. Madero</option>
+                    <option>Iztacalco</option>
+                    <option>Iztapalapa</option>
+                    <option>Magdalena Contreras</option>
+                    <option>Miguel Hidalgo</option>
+                    <option>Milpa Alta</option>
+                    <option>Tlahuac</option>
+                    <option>Venustiano Carranza</option>
+                    <option>Xochimilco</option>
+                </select><br><br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Informac&oacute;n general.</legend>
+
+                <p>Lenguaje de programación favorito.</p>
+                <input type="checkbox" name="check" value="C">C
+                <input type="checkbox" name="check" value="C++">C++
+                <input type="checkbox" name="check" value="JAVA">JAVA
+                <input type="checkbox" name="check" value="JS">JS
+                <input type="checkbox" name="check" value="PYTHON">Python
+                <input type="checkbox" name="check" value="RUBY">Ruby
+                <input type="checkbox" name="check" value="OTRO">Otro
+                <br><br>
+
+                <label for="pasatiempos">Pasatiempos.</label>
+                <select name="pasatiempos" class="inputChooseSpecial" required id="pasatiempos" size="3" multiple>
+                    <option id="opcion1">Escuchar musica.</option>
+                    <option id="opcion2">Jugar videojuegos.</option>
+                    <option id="opcion3">Salir a fiestas con los amigos.</option>
+                    <option id="opcion4">Leer un buen libro.</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informac&oacute;n acad&eacute;mica.</legend>
+
+                <label for="promedio">Promedio.</label>
+                <input type="text" class="inputTexto" name="promedio" required id="promedio">
+                <br><br>
+
+                <label for="semestre">Semestre</label>
+                <select name="semestre" class="inputChoose" required id="semestre">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                </select><br><br>
+
+                <!--materia-->
+                <label for="materiasDebe">¿Debes materias?</label> &nbsp;&nbsp;
+                <label for="materias">Si</label>
+                <input type="radio" class="radioInput" value="Si" name="materiasDebe" required id="materias">
+                <label for="materiasF">No</label>
+                <input type="radio" class="radioInput" value="No" name="materiasDebe" required id="materiasF">
+                <br><br>
+
+
+                <label for="comentario">Comentarios.</label> <br><br>
+                <textarea name="comentario"  cols="30" rows="10"
+                    placeholder="Escriba algun comentario." id="comentario"></textarea>
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos de la Cuenta.</legend>
+
+                <label for="nombreUser">Nombre de usuario.</label>
+                <input type="text" class="inputTexto" name="nombreUser" required id="nombreUser">
+                <br><br>
+
+                <label for="password">Password.</label>
+                <input type="password" name="password" class="inputTexto" required id="password">
+                <br><br>
+            </fieldset>
+
+            <input type="submit" id="submit" value="Enviar formulario.">
+
+        </form>
+    </div>
+
+</body>
+<script src="script/js.js"></script>
+
+</html>
