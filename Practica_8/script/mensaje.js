@@ -14,10 +14,11 @@ function leerCookie(nombre) {
 }
 //listaCookies = misCookies.split("//");
 mensaje.innerHTML = 
-"Nombre = " + leerCookie("Nombre") + "<br>" + 
+"Nombre = " + leerCookie("GNombre") + "<br>" + 
 "Apellido Paterno = " + leerCookie("Apellido Paterno") + "<br>" + 
 "Apellido Materno = " + leerCookie("Apellido Materno") + "<br>" + 
-"Fecha Nacimiento = " + leerCookie("Fecha Nacimiento") + "<br>" + 
+"Fecha Nacimiento (con calendario) = " + leerCookie("Fecha Nacimiento") + "<br>" + 
+"Fecha Nacimiento (con elementos input separados)= " + leerCookie("dia") + "/" + leerCookie("mes") + "/" + leerCookie("year") + "<br>" + 
 "Signo Zodiacal = " + leerCookie("Signo Zodiacal") + "<br>" + 
 "Genero = " + leerCookie("Genero") + "<br>" + 
 "Email = " + leerCookie("Email") + "<br>" + 

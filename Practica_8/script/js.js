@@ -15,7 +15,16 @@ function leerCookie(nombre) {
     return valor;
 }
 
-document.getElementById('nombre').value = leerCookie("Nombre");
+function setTimeForCookies (minutes) {
+	var now = new Date();
+	var time = now.getTime();
+ 
+	time += minutes * 60 * 1000;
+	now.setTime(time);
+	return now;
+}
+
+document.getElementById('nombre').value = leerCookie("GNombre");
 document.getElementById('apPaterno').value = leerCookie("Apellido Paterno");
 document.getElementById('apMaterno').value = leerCookie("Apellido Materno");
 document.getElementById('nac').value = leerCookie("Fecha Nacimiento");
@@ -208,7 +217,7 @@ btnSend.addEventListener('click', () => {
             + "Password = " + password + "\r");
     }
 
-    nombresGalletas = ["Nombre", "Apellido Paterno", "Apellido Materno", "Fecha Nacimiento", "Signo Zodiacal",
+    nombresGalletas = ["GNombre", "Apellido Paterno", "Apellido Materno", "Fecha Nacimiento", "Signo Zodiacal",
         "Genero", "Email", "Calle", "Numero De Casa", "Codigo Postal", "Delegacion", "Lenguajes", "Pasatiempos", "Promedio",
         "Semestre Actual", "Debe Materias", "Comentarios", "Nombre del Usuario", "Password del usuario", "dia", "mes", "year", "Opcion1", "Opcion2", "Opcion3", "Opcion4"];
 
@@ -221,7 +230,7 @@ btnSend.addEventListener('click', () => {
             document.getElementById('opcion3').selected == true ||
             document.getElementById('opcion4').selected == true) {
 
-            document.cookie = nombresGalletas[corrido] + " = " + valoresFormularioValidados[corrido];
+            document.cookie = nombresGalletas[corrido] + " = " + valoresFormularioValidados[corrido]; expires=" + setTimeForCookies(300) + ";
             contadorAdicional++;
 
             if (valoresFormularioValidados.length - 1 == contadorAdicional) {
