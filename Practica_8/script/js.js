@@ -34,6 +34,10 @@ document.getElementsByName('materiasDebe').value = leerCookie("Debe Materias"); 
 document.getElementById('comentario').value = leerCookie("Comentarios");
 document.getElementById("nombreUser").value = leerCookie("Nombre del Usuario");
 document.getElementById("password").value = leerCookie("Password del usuario");
+//Fecha con fragmentos
+document.getElementById('dia').value = leerCookie("dia"); /*validado*/
+document.getElementById('mes').value = leerCookie("mes"); /*validado*/
+document.getElementById('year').value = leerCookie("year"); /*validado*/
 
 var sexo = document.getElementsByName('genero');
 console.log(leerCookie("Genero"))
@@ -96,9 +100,9 @@ btnSend.addEventListener('click', () => {
     var nombre = document.getElementById('nombre').value;
     var apPaterno = document.getElementById('apPaterno').value;
     var apMaterno = document.getElementById('apMaterno').value;
-    //var dia = document.getElementById('dia').value; /*validado*/
-    //var mes = document.getElementById('mes').value; /*validado*/
-    //var year = document.getElementById('year').value; /*validado*/
+    var dia = document.getElementById('dia').value; /*validado*/
+    var mes = document.getElementById('mes').value; /*validado*/
+    var year = document.getElementById('year').value; /*validado*/
     var fechaNac = document.getElementById('nac').value;
     var signo = document.getElementById('signo').value; /*validado*/
 
@@ -206,10 +210,10 @@ btnSend.addEventListener('click', () => {
 
     nombresGalletas = ["Nombre", "Apellido Paterno", "Apellido Materno", "Fecha Nacimiento", "Signo Zodiacal",
         "Genero", "Email", "Calle", "Numero De Casa", "Codigo Postal", "Delegacion", "Lenguajes", "Pasatiempos", "Promedio",
-        "Semestre Actual", "Debe Materias", "Comentarios", "Nombre del Usuario", "Password del usuario", "Opcion1", "Opcion2", "Opcion3", "Opcion4"];
+        "Semestre Actual", "Debe Materias", "Comentarios", "Nombre del Usuario", "Password del usuario", "dia", "mes", "year", "Opcion1", "Opcion2", "Opcion3", "Opcion4"];
 
     valoresFormularioValidados = [nombre, apPaterno, apMaterno, fechaNac, signo, sexo, email, calle, numeroCasa, codigoPostal, delagacion, selected,
-        pasatiemposResult, promedio, semestre, oweMaterias, comentario, user, password];
+        pasatiemposResult, promedio, semestre, oweMaterias, comentario, user, password, dia, mes,year];
     var contadorAdicional = 0;
     for (var corrido = 0; corrido <= valoresFormularioValidados.length; corrido++) {
         if (document.getElementById('opcion1').selected == true ||
