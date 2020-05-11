@@ -1,0 +1,26 @@
+
+<!ELEMENT libroCocina  ( seccionBig+ )>
+
+<!ELEMENT ingredientesLista  ( ingrediente+ )>
+
+<!ELEMENT instructions  ( paso+ )>
+
+<!ELEMENT tituloSeccion  ( #PCDATA )>
+
+<!ELEMENT tituloReceta  ( #PCDATA )>
+
+<!ELEMENT elementoSeccion  ( tituloReceta , ingredientesLista , instructions )>
+
+<!ELEMENT paso  ( #PCDATA )>
+<!ATTLIST paso
+numeroPaso CDATA #REQUIRED
+>
+
+<!ELEMENT cantidad  ( #PCDATA )>
+
+<!ELEMENT seccionBig  ( tituloSeccion , elementoSeccion+ )>
+
+<!ELEMENT ingrediente  ( #PCDATA | cantidad )*>
+<!ATTLIST ingrediente
+ingrediente CDATA #REQUIRED
+>

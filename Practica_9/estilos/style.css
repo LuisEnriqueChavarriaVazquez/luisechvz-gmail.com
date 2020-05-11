@@ -1,0 +1,88 @@
+*{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+libroCocina{
+    padding: 30px 100px;
+    background-image: url('../pictures/back.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+tituloSeccion{
+    font-size: 30px;
+    display: block;
+    margin: 20px 0px;
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+tituloReceta{
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+}
+
+ingredientesLista{
+    display: block;
+}
+
+elementoSeccion{
+    padding: 20px;
+    display: block;
+}
+
+seccionBig{
+    display: block;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: rgb(2, 103, 143);
+    box-shadow: 1px 1px 10px #000000;
+    border-radius: 10px;
+}
+
+ingrediente{
+    display: block;
+    margin: 15px;
+}
+
+ingrediente:first-child{
+    margin-top: 10px;
+}
+
+ingrediente::before{
+    content: '•';
+    margin-right: 10px;
+}
+
+ingrediente > cantidad{
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    border-radius: 500px;
+    padding: 5px 12px;
+    margin-left: 5px;
+    color: rgb(2, 103, 143);
+}
+
+paso{
+    font-size: 20px;
+    display: block;
+    margin: 10px 0px;
+    line-height: 30px;
+    font-weight: 600;
+    color: rgb(2, 103, 143);
+}
+
+instructions{
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px 30px;
+    text-align: left;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
