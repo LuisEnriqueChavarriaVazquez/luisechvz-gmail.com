@@ -1,0 +1,64 @@
+/*elementos del carousel*/
+
+.titleCarousel {
+    font-size: 40px;
+    color: rgb(102, 102, 102);
+    margin-left: 20px;
+  }
+  
+  .carouselText {
+      font-size: 20px;
+      margin-left: 20px;
+    color: rgb(112, 22, 0);
+}
+  img {
+      width: 100%;
+      height: 100%;
+  }
+  
+  .carousel {
+      display: grid;
+      justify-items: center;
+      align-content: center;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      /*display: flex;
+      align-items: center;
+      justify-content: center;*/
+  }
+  
+  .contenedor {
+    width: 500px;
+    position: relative;
+    height: 300px;
+}
+
+
+  .back,
+  .go {
+      font-size: 30px; width: 30px; height: 30px; line-height: 30px; border-radius: 50%;
+    background-color: rgb(112, 22, 0); text-align: center; font-weight: bold; color: #fff; margin: 5px;
+}
+  
+  .back:hover,
+  .go:hover {
+    background-color: rgb(184, 37, 0);
+}
+
+.wholeThingCarousel{
+    position: relative; top: 50px;
+}
+
+.botonesCarousel {
+    margin-left: 10px; margin-top: 20px; width: 100px;
+    
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;*/
+  }
+  
+  

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica 10</title>
+    <link rel="stylesheet" href="style/styleNoFlexBox.css"/>
+    <link rel="stylesheet" href="style/galeriaNoFlexBox.css" />
+    <link rel="shortcut icon" href="extra/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <header class="headerAligner headerStyler">
+        <section class="navAligner navStyler">
+            <p>Esta es la versión SIN FLEXBOX</p>
+        </section>
+        <section class="menuAligner menuStyler">
+            <section></section>
+            <h3>Vida Alternativa.</h3>
+            <nav class="optionsAligner1 optionsStyler">
+                <p class="option">Inicio</p>
+                <p class="option">Acerca de</p>
+                <p class="option">Terapias</p>
+                <p class="option">Medicina</p>
+                <p class="option">Contacto</p>
+            </nav>
+            <section></section>
+        </section>
+    </header>
+
+    <section class="carousel">
+        <section></section>
+        <section class="contenedor">
+            <img src="img/img1.jpg" alt="" id="imagen">
+        </section>
+        <section class="wholeThingCarousel">
+            <section>
+                <h4 class="titleCarousel">Medicina tradicional.</h4>
+                <p class="carouselText">
+                    Conserva tu salud naturalmente con <br>
+                    la herbolaría tradicional mexicana.
+                </p>
+            </section>
+            <section class="botonesCarousel">
+                <section class="back" onclick="galeria('back')">
+                    <img src="pictures/past.svg">
+                </section>
+                <section class="go" onclick="galeria('go')">
+                    <img src="pictures/next.svg">
+                </section>
+            </section>     
+        </section>
+        <section></section>
+    </section>
+
+    <section class="ultraContainer">
+
+        <main>
+            <!--Aqui comienza la parte del primer articulo-->
+            <section class="articuloMain">
+                <section>
+                    <h4>Terapias alternativas</h4>
+                </section>
+                <article class="articleAligner">
+                    <section class="article1Pic">
+                    </section>
+                    <section class="articleText">
+                        <p class="titleH5">¿Qu&eacute; son las ter&aacute;pias alternativas?</p>
+                        <p>
+                            Las terapias alternativas son un tipo de tratamiento
+                            naturales no invasivos que se engloban dentro de la
+                            medicina alternativa, tienen como finalidad el establecimiento
+                            de la salud f&iacute;sica y emocional del paciente. Algunos: ejemplos son
+                            la acupuntura, reflexología, shiatsu, masaje ayuv&eacute;dico, etc.
+                        </p>
+                        <button class="buttonMore">M&aacute;s informaci&oacute;n</button>
+                    </section>
+                </article>
+            </section>
+            <hr>
+
+            <!--Aqui ponemos los 4 articulos adicionales-->
+            <section class="allArticles">
+                <!--First part-->
+                <section class="alignArticles">
+                    <article class="miniArticle">
+                        <section class="miniarticleTitle">
+                            <section><h4 class="title">Constelaciones familiares.</h4></section>
+                        </section>
+                        <section class="containMiniArticle">
+                            <section class="miniArticlePic">
+                                <img src="pictures/art1.jpg">
+                            </section>
+                            <section class="miniArticle">
+                                <p>
+                                    Se trata de un m&eacute;todo
+                                    que se usa para sacar a relucir
+                                    los problemas que las personas tienen
+                                    desde su niñez.
+                                </p>
+                            </section>
+                        </section>
+                    </article>
+
+                    <article class="miniArticle">
+                        <section class="miniarticleTitle">
+                            <section><h4 class="title">Constelaciones familiares.</h4></section>
+                        </section>
+                        <section class="containMiniArticle">
+                            <section class="miniArticlePic">
+                                <img src="pictures/art2.jpg">
+                            </section>
+                            <section class="miniArticle">
+                                <p>
+                                    El análisis bionegético supone 
+                                    que una persona sana es una 
+                                    persona vital que goza de buena energía.
+                                </p>
+                            </section>
+                        </section>
+                    </article>
+                </section>
+
+                <!--Second part-->
+                <section class="alignArticles">
+                    <article class="miniArticle">
+                        <section class="miniarticleTitle">
+                            <section><h4 class="title">Constelaciones familiares.</h4></section>
+                        </section>
+                        <section class="containMiniArticle">
+                            <section class="miniArticlePic">
+                                <img src="pictures/art3.jpg">
+                            </section>
+                            <section class="miniArticle">
+                                <p>    
+                                    El reiki te invita por un rato a 
+                                    despejar tu mente para que trabajes 
+                                    sobre los puntos.
+                                </p>
+                            </section>
+                        </section>
+                    </article>
+
+                    <article class="miniArticle">
+                        <section class="miniarticleTitle">
+                            <section><h4 class="title">Constelaciones familiares.</h4></section>
+                        </section>
+                        <section class="containMiniArticle">
+                            <section class="miniArticlePic">
+                                <img src="pictures/art4.jpg">
+                            </section>
+                            <section class="miniArticle">
+                                <p>
+                                    Utiliza terapias naturales y hace
+                                    hincapié en el cuidado de la dieta
+                                    , el trabajo y la familia como puntos
+                                    claves para mejorar y cuidar la salud.
+                                </p>
+                            </section>
+                        </section>
+                    </article>
+
+                </section>
+            </section>
+
+            <hr>
+
+            <section class="lastArticle">
+                <section>
+                    <h4 class="title">Es el momento de trabajar en ti.</h4>
+                </section>
+                <section class="textoFinalArticle">
+                    <p>Es momento de resolver lo que te limita para 
+                    recuperar tu liberta y tener la paz emocional
+                    y mental que por naturaleza te pertenece.</p>
+
+                    <p>Podemos abandonar de forma afectiva y rápida 
+                    los problemas que mas afectan hoy al ser humano.
+                    Las terapias nos ayuda a liberarnos de emociones,
+                    a vivir sin culpas, liberar viejas creencias 
+                    personales, familiares y de tu entorno, 
+                    abandonar el uso de sustancias tóxicas y 
+                    crear una vida mas equilibrada tomando 
+                    conciencia de la vida, y mucho mas... </p>
+
+                    <p>Recuerda que si estas leyendo esto es por que 
+                    tu se esta listo para resolver. No olvides 
+                    lo mucho que te ha costado tu pasado, 
+                    revisalo, te daras cuenta que los daños 
+                    son cuantitativos.</p>
+                </section>
+                <button class="buttonMore buttonMore2">M&aacute;s informaci&oacute;n</button>
+            </section>
+
+            <!--Parte final-->
+        </main>
+        <aside>
+            <section>
+                <section>
+                    <h4 class="title">Buscar</h4>
+                </section>
+                <section class="browserBox">
+                    <input type="search"> <section class="iconSearch"><img src="pictures/search.svg"></section>
+                </section>
+            </section>
+
+            <section class="ofertas">
+                <section>
+                    <h4 class="title titleMarginer">Terapias Disponibles</h4>
+                </section>
+                <section class="iconCuenta">
+                    <section><img src="pictures/cuenta.svg"></section>
+                    <section><p>Agenda tu cita para ter&aacute;pias que <br> tenemos disponibles.</p></section>
+                </section>
+                <section class="optionsCuenta">
+                    <section class="optionsAligner">
+                        <section><img src="pictures/arrow.svg"></section><section><p>Desbloqueo y alineacion de chackras.</p></section>
+                    </section>
+                    <section class="optionsAligner">
+                        <section><img src="pictures/arrow.svg"></section><section><p>Flores de Bach.</p></section>
+                    </section>
+                    <section class="optionsAligner">
+                        <section><img src="pictures/arrow.svg"></section><section><p>Diagnóstico de enfermedades a través del iris.</p></section>
+                    </section>
+                    <section class="optionsAligner">
+                        <section><img src="pictures/arrow.svg"></section><section><p>Limpieza de Aura.</p></section>
+                    </section>
+                    <section class="optionsAligner">
+                        <section><img src="pictures/arrow.svg"></section><section><p>Masaje Terapéutico.</p></section>
+                    </section>
+                    <section class="optionsAligner">
+                        <section><img src="pictures/arrow.svg"></section><section><p>Sanación espiritual.</p></section>
+                    </section>
+                </section>
+            </section>
+            
+            <section>
+                <section>
+                    <h4 class="title titleMarginer">Noticias</h4>
+                </section>
+                <section class="iconCuenta">
+                    <section><img src="pictures/article.svg"></section>
+                    <section><p>Breves noticias de las terápias <br> alternativas.</p></section>
+                </section>
+                <section class="moreStuff">
+                        <p>
+                            <span>"Los bloqueos energeticos son la principal causa de la mayoria de dolencias"</span><br>
+                            Muchas dolencias se originan por impactos emocionales negativos no liberados en el momento / 
+                            <a>Leer mas >></a>
+                        </p>
+                        <p>
+                            <span>"La pandemia de la soledad"</span><br>
+                            Toda solución pasa por una terapia para eliminar los bloqueos emocionales y enérgeticos acumulados y para desprenderse de las corazas que impiden llegar a las otras personas / 
+                            <a>Leer mas >></a>
+                        </p>
+                        <p>
+                            <span>"Por qué no tengo tanta suerte como otras personas?"</span><br>
+                            Si la persona presenta un bloqueo paterno atrae a su vida dificultades, problemas, obstaculos, apuros, etc. / 
+                            <a>Leer mas >>
+                        </p>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h4 class="title titleMarginer">Contacto</h4>
+                </section>
+                <section class="iconCuenta">
+                    <section><p>Visitanos para conocer nuestras instalaciones y el personal a cargo de las diferentes terapias que ofrecemos</p></section>
+                </section>
+                <section class="moreStuff contactMore">
+                        <section class="info">
+                            <section><img src="pictures/home.svg"></section>
+                            <section><p>Avenida, de las Azaleas Mz 26. Lt. 26 Iztapalapa</p></section>
+                        </section>
+                        <section class="info">
+                            <section><img src="pictures/phone.svg"></section>
+                            <section><p>55-33445566</p></section>
+                        </section>
+                </section>
+            </section>
+        </aside>
+    </section>
+
+    <footer>
+        <section class="upFooter">
+            <section class="tips">
+                <h4>Tips</h4>
+                <p>Curate a ti mismo</p>
+                <p>Equilibra tu energia</p>
+                <p>Verifica tu mente</p>
+            </section>
+            <section class="suscript">
+                <h4>Suscripcion al boletín de noticias.</h4>
+                <section>
+                    <p>Recibe las novedades del boletin semanal.</p>
+                    <input type="email">
+                    <button class="buttonMore buttonMore3">Suscribirse</button>
+                </section>
+            </section>
+            <section class="network">
+                <h4>Siguienos en las redes.</h4>
+                <section class="networkIcons">
+                    <img src="pictures/facebook.svg">
+                    <img src="pictures/twitter.svg">
+                    <img src="pictures/linkedin.svg">
+                    <img src="pictures/instagram.svg">
+                </section>
+                <br>
+                <section class="emailInfo">
+                    <p>Escribenos <br> a terapias@gmail.com</p>
+                </section>
+            </section>
+        </section>
+        <section class="downFooter">
+            <p>Copyright (C) Vida Natural. Todos los derechos reservados. 2016. <a href="index.html">Versión con FLEXBOX</a></p>
+        </section>
+    </footer>
+</body>
+<script src="script/js.js"></script>
+
+</html>
