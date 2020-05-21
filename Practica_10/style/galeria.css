@@ -1,0 +1,65 @@
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor {
+  width: 500px;
+  position: relative;
+  height: 300px;
+}
+
+.botonAtras,
+.botonAdelante {
+
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+
+  background-color: rgba(1, 63, 60);
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+
+  margin: 5px;
+
+}
+
+.botonAtras:hover,
+.botonAdelante:hover {
+  cursor: pointer;
+  background-color: cadetblue;
+}
+
+.botonesCarousel{
+    width: 100px;
+    margin-left: 0px;
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/*elementos del carousel*/
+
+.titleCarousel{
+  font-size: 40px;
+  color: rgb(102, 102, 102);
+  margin-left: 20px;
+}
+
+.carouselText{
+  font-size: 20px;
+  margin-left: 20px;
+  color: rgb(2, 97, 52);
+}
