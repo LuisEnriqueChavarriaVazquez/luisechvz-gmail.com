@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Práctica 11</title>
     <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/bottomNavigation.css">
-    <link rel="stylesheet" href="style/code.css">
-    <link rel="stylesheet" href="style/stack.css">
+    <link rel="stylesheet" href="style/bottomNavigation.css" />
+    <link rel="stylesheet" href="style/code.css" />
+    <link rel="stylesheet" href="style/stack.css" />
+    <link rel="stylesheet" href="style/animaciones.css" />
     <link rel="shortcut icon" href="extra/favicon.ico" type="image/x-icon" />
 </head>
 
@@ -20,19 +21,97 @@
     </header>
 
     <section class="mainContent">
-        <div class="boxStack" id="boxStack">
-            <!--<div class="celda"><p class="textoCelda first">1</p></div>
-            <div class="celda"><p class="textoCelda">2</p></div>
-            <div class="celda"><p class="textoCelda">3</p></div>
-            <div class="celda"><p class="textoCelda">4</p></div>
-            <div class="celda"><p class="textoCelda first">5</p></div>-->
+        <div class="boxStackWholeContainer" id="boxStackWholeContainer">
+            <div class="pointerGris hidder pointerDown" id="pointerDown">
+                Inicio ->
+            </div>
+            <div class="boxStack" id="boxStack">
+                <!--<div class="celda"><p class="textoCelda">lorem</p></div>
+                <div class="celda"><p class="textoCelda">2</p></div>-->
+            </div>
+            <div class="pointerGris hidder pointerUp" id="pointerUp">Final -></div>
         </div>
         <div class="boxCode">
-            <h2>Code</h2>
-            <code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum earum quisquam reiciendis iste explicabo vero, possimus deleniti, soluta, ea consectetur. Aliquid consequuntur enim sit tempore aperiam delectus perferendis accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut molestias possimus, adipisci itaque, atque aperiam labore blanditiis minima et veritatis quaerat sit ipsam corrupti vel ex nihil maxime magnam reiciendis.</code>
+            <h2>Code</h2><br>
+            <section class="consoles">
+                <code>
+            <div class="titler"><h3 class="titleSectionCode">Funciones principales. </h2> <span> En lenguaje C </span></div>
+            <pre class="mainCode">
+                <p class="titleComentario">// Estructura de datos para STACK</p>
+                <div class="inserts">
+struct stack{
+    int superior;		
+    int maximoTamaño;
+    int *elementos;
+};
+                </div>
+                            
+                <p class="titleComentario">// Funcion para inicializar nuestra PILA</p>
+                <div class="inserts hidder">
+struct stack* newStack(int capacidad){
+    struct stack *nodo = (struct stack*)malloc(sizeof(struct stack));
+    
+    nodo->maximoTamaño = capacidad;
+    nodo->superior = -1;
+    nodo->elementos = (int*)malloc(sizeof(int) * capacidad);
+    
+    return nodo;
+}
+                </div>
+
+                <p class="titleComentario">// Utility function to add an element x in the stack</p>
+                <div class="inserts hidder">
+void push(struct stack *nodo, int x){
+    //En caso de OVERFLOW
+    if (isFull(nodo)){
+        printf("ProgramaTerminado\n");
+        exit(EXIT_FAILURE);
+    }
+
+    printf("Insertando %d\n", x);
+    nodo->elementos[++nodo->superior] = x;
+}
+                </div>
+
+                <p class="titleComentario">// Utility function to pop superior element from the stack</p>
+                <div class="inserts hidder">
+int pop(struct stack *nodo){
+    //En caso de UNDERFLOW
+    if (isEmpty(nodo)){
+        printf("ProgramaTerminado\n");
+        exit(EXIT_FAILURE);
+    }
+    
+    printf("Rmoviendo %d\n", peek(nodo));
+    return pt->elementos[pt->superior--];
+}
+                </div>
+                
+            </pre>
+        </code>
+
+        <code>
+            <h3 class="titleSectionCode">Agregación de elementos.</h2>
+            <pre class="mainCode">
+            
+                <p class="titleComentario">// Agregando elementos</p>
+                 <div class="inserts">
+int main(){
+    struct stack *nodo = newStack(100000);
+    <div class="operations">
+    </div>
+
+    if (isEmpty(nodo))
+        printf("No hay elementos en la pila");
+    return 0;
+}
+                </div>
+                
+            </pre>
+        </code>
+        </section>
         </div>
     </section>
-
 
     <div class="navbar" id="myNavbar">
         <section class="buttonsContainer">

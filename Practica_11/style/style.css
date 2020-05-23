@@ -16,6 +16,7 @@ body {
   box-sizing: border-box;
 
   color: white;
+  z-index: 2;
 }
 
 body {
@@ -23,6 +24,7 @@ body {
 }
 
 .buttonsContainer {
+  background-color: #263238;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -33,7 +35,7 @@ body {
 nav {
   width: 100%;
   height: 60px;
-  background-color: #161c1f;
+  background-color: #263238;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
   display: flex;
@@ -47,9 +49,7 @@ nav {
   padding: 15px;
   width: 850px;
   height: 100px;
-  background-color: #263238;
   border-radius: 5px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .buttons section {
@@ -180,13 +180,66 @@ label {
 
 #value {
   border-style: none;
-  border-radius: 10px;
-  width: 150px;
-  height: 50px;
+  border-radius: 5px 0 0 5px;
+  width: 100%;
+  height: 69px;
   font-size: 20px;
   color: #263238;
+  background-color: rgb(223, 223, 223);
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 0px;
+  position: relative;
+  bottom: 1px;
+}
+
+#value:hover {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background: rgba(255, 255, 255, 1);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 10%,
+    rgba(207, 207, 207, 1) 62%,
+    rgba(207, 207, 207, 1) 100%
+  );
+  background: -webkit-gradient(
+    left bottom,
+    right top,
+    color-stop(0%, rgba(255, 255, 255, 1)),
+    color-stop(10%, rgba(246, 246, 246, 1)),
+    color-stop(62%, rgba(207, 207, 207, 1)),
+    color-stop(100%, rgba(207, 207, 207, 1))
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 10%,
+    rgba(207, 207, 207, 1) 62%,
+    rgba(207, 207, 207, 1) 100%
+  );
+  background: -o-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 10%,
+    rgba(207, 207, 207, 1) 62%,
+    rgba(207, 207, 207, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 10%,
+    rgba(207, 207, 207, 1) 62%,
+    rgba(207, 207, 207, 1) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 10%,
+    rgba(207, 207, 207, 1) 62%,
+    rgba(207, 207, 207, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cfcfcf', GradientType=1 );
 }
 
 .newData {
@@ -201,7 +254,7 @@ label {
 
   display: flex;
   align-items: center;
-  padding: 0 15px 0 15px;
+  padding: 0 0px 0 15px;
   background-color: #263238;
 }
 
